@@ -1,0 +1,5 @@
+*.iml
+out/
+*.idea
+src/others
+src/Theory

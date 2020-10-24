@@ -44,7 +44,20 @@ public class PalindromeLinkedList {
         }
         return prev;
     }
-
+    /*
+    public boolean isPalindrome(ListNode head) {
+            long hash1 = 0, hash2 = 0, h = 1;
+            long seed = (long) (1e9 + 7);
+            ListNode p = head;
+            while (p != null) {
+                hash1 = hash1 * seed + p.val;
+                hash2 = hash2 + h * p.val;
+                h *= seed;
+                p = p.next;
+            }
+            return hash1 == hash2;
+        }
+     */
     public static void main(String[] args) {
         PalindromeLinkedList p = new PalindromeLinkedList();
         ListNode l1 = new ListNode(1);

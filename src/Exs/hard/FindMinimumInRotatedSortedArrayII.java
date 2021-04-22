@@ -1,7 +1,4 @@
-package Exs.dificult;
-
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+package Exs.hard;
 
 /**
  * @author wy

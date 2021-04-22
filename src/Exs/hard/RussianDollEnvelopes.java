@@ -1,7 +1,6 @@
-package Exs.dificult;
+package Exs.hard;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * @author wy

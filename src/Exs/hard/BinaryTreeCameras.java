@@ -1,8 +1,4 @@
-package Exs.dificult;
-
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+package Exs.hard;
 
 /**
  * @author Wei

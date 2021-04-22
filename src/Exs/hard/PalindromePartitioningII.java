@@ -1,4 +1,4 @@
-package Exs.dificult;
+package Exs.hard;
 
 /**
  * @author wy

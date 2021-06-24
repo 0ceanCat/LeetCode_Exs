@@ -7,38 +7,27 @@ package Exs.easy;
  */
 public class ReverseInteger {
     public static void main(String[] args) {
-        System.out.println(reverse(-1111111119));
+        System.out.println(reverse(1111111119));
         System.currentTimeMillis();
     }
 
     public static int reverse(int x) {
-            String s= x+"";
-            StringBuilder sb=new StringBuilder();
-            if (s.charAt(0)=='-'){
-                sb.append("-");
-                for (int i = s.length()-1; i>0; i--)
-                    sb.append(s.charAt(i));
-            }
-            int result;
-            try {
-                result=Integer.parseInt(sb.toString());
-            }catch (Exception e){
+        int res = 0;
+        while(x != 0) {
+            //每次取末尾数字
+            int tmp = x % 10;
+            //判断是否 大于 最大32位整数
+            if (res > 214748364 || (res == 214748364 && tmp > 7)) {
                 return 0;
             }
-
-            return result;
-    }
-
-    public static int solution(int x){
-        int y = 0;
-        while (x != 0) {
-            if (y > 214748364 || y < -214748364) {
+            //判断是否 小于 最小32位整数
+            if (res < -214748364 || (res == -214748364 && tmp < -8)) {
                 return 0;
             }
-            y = y * 10 + x % 10;
-            x = x / 10;
+            res = res  *10 + tmp;
+            x /= 10;
         }
-        return y;
+        return res;
     }
 
 }

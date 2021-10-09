@@ -17,12 +17,12 @@ public class ThreeSum {
         //双指针
         int len = nums.length;
         for(int i = 0;i < len;++i) {
-            if(nums[i] > 0) return lists;
+            if(nums[i] > 0) return lists;  // 已经排序好了。所以如果当前数大于0，后面的数加起来必定不等于0
 
-            if(i > 0 && nums[i] == nums[i-1]) continue;
+            if(i > 0 && nums[i] == nums[i-1]) continue; // 对于重复元素：跳过，避免出现重复解
 
             int curr = nums[i];
-            int L = i+1, R = len-1;
+            int L = i + 1, R = len - 1;
             while (L < R) {
                 int tmp = curr + nums[L] + nums[R];
                 if(tmp == 0) {

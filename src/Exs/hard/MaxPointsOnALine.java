@@ -54,4 +54,9 @@ public class MaxPointsOnALine {
 
         return m + "," + b;
     }
+
+    public static void main(String[] args) {
+        System.out.println(10.0 / (1.0 - (-10.0 / 60.0)));
+        System.out.println(180.0/7);
+    }
 }

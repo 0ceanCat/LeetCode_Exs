@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class PartitionLabels {
 
-  /*public List<Integer> partitionLabels(String S) {
+  /*public List<Integer> partitionLabels(Theory.String S) {
       List<Integer> list = new ArrayList<>();
       Map<Character,Integer> map = new HashMap<>();
 

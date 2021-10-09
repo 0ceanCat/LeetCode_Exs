@@ -6,7 +6,7 @@ package Exs.medium;
  */
 // 1143. 最长公共子序列
 public class LongestCommonSubsequence {
-    public int longestCommonSubsequence(String text1, String text2) {
+    public static int longestCommonSubsequence(String text1, String text2) {
         int m = text1.length(), n = text2.length();
         int[][] dp = new int[m + 1][n + 1];
         for(int i = 1; i <= m; i++){
@@ -19,5 +19,9 @@ public class LongestCommonSubsequence {
             }
         }
         return dp[m][n];
+    }
+
+    public static void main(String[] args) {
+        longestCommonSubsequence("a", "aaaaaaaaa");
     }
 }

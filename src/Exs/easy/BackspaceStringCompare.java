@@ -8,7 +8,7 @@ import java.util.Stack;
  * 844. 比较含退格的字符串
  */
 public class BackspaceStringCompare {
-   /* public boolean backspaceCompare(String S, String T) {
+   /* public boolean backspaceCompare(Theory.String S, Theory.String T) {
         Stack<Character> s1 = build(S);
         Stack<Character> s2 = build(T);
         if (s1.size() != s2.size()) return false;
@@ -20,7 +20,7 @@ public class BackspaceStringCompare {
         return true;
     }
 
-    private Stack<Character> build(String T) {
+    private Stack<Character> build(Theory.String T) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < T.length(); i++) {
             if (T.charAt(i) != '#'){

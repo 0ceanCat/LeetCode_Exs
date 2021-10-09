@@ -41,11 +41,11 @@ public class ReconstructItinerary {
         result.add(0, key); // 逆序插入
     }
     public static void main(String[] args) {
-      /*  List<String> list1 = Arrays.asList("JFK","SFO");
-        List<String> list2 = Arrays.asList("JFK","ATL");
-        List<String> list3 = Arrays.asList("SFO","ATL");
-        List<String> list4 = Arrays.asList("ATL","JFK");
-        List<String> list5 = Arrays.asList("ATL","SFO");*/
+      /*  List<Theory.String> list1 = Arrays.asList("JFK","SFO");
+        List<Theory.String> list2 = Arrays.asList("JFK","ATL");
+        List<Theory.String> list3 = Arrays.asList("SFO","ATL");
+        List<Theory.String> list4 = Arrays.asList("ATL","JFK");
+        List<Theory.String> list5 = Arrays.asList("ATL","SFO");*/
         List<String> list1 = Arrays.asList("MUC","LHR");
         List<String> list2 = Arrays.asList("JFK","MUC");
         List<String> list3 = Arrays.asList("SFO","SJC");

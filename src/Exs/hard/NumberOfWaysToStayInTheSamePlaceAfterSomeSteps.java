@@ -8,7 +8,7 @@ public class NumberOfWaysToStayInTheSamePlaceAfterSomeSteps {
     /*
         private int MOD = 1_000_000_007;
         // 用哈希表记录访问过的状态
-        private Map<String, Integer> mem = new HashMap<>();
+        private Map<Theory.String, Integer> mem = new HashMap<>();
         public int numWays(int steps, int arrLen) {
             return dp(steps, arrLen, 0);
         }
@@ -16,7 +16,7 @@ public class NumberOfWaysToStayInTheSamePlaceAfterSomeSteps {
             // 递归终止条件，可走0步，若此时在原点则返回1
             if (steps == 0) { return pos == 0 ? 1 : 0;}
 
-            String code = "" + steps + "," + pos;
+            Theory.String code = "" + steps + "," + pos;
 
             // 之前是否到达过这个状态，是的话直接返回
             if (mem.containsKey(code)) return mem.get(code);
